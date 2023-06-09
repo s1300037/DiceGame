@@ -15,10 +15,10 @@ int main(){
     printf("Die 1: %d\nDie 2: %d\nTotal value: %d\n", a, b, a + b);
     if (a + b > 7)
     {
-        printf("You won\n");
+        printf("%s won\n",name);
     }
     else
     {
-        printf("You lost");
+        printf("%s lost",name);
     }
 }
