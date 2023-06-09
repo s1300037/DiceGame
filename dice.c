@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 
 int main(){
     int a,b;
@@ -7,8 +8,17 @@ int main(){
     printf("What is your name?\n>");
     scanf("%s",name);
     printf("Hello, %s!\n",name);
+
     printf("Rolling dice...\n");
-    a = rand()%6 +1;
-    b = rand()%6 +1;
-    printf("Die 1: %d\nDie 2: %d\nTotal value: %d\n",a,b,a+b);
+    a = rand() % 6 + 1;
+    b = rand() % 6 + 1;
+    printf("Die 1: %d\nDie 2: %d\nTotal value: %d\n", a, b, a + b);
+    if (a + b > 7)
+    {
+        printf("You won\n");
+    }
+    else
+    {
+        printf("You lost");
+    }
 }
